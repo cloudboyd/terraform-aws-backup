@@ -3,6 +3,125 @@
 All notable changes to this project will be documented in this file.
 
 
+## [2.0.0](https://github.com/cloudboyd/terraform-aws-backup/compare/1.10.0...2.0.0) (2026-08-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* None - this is a documentation-only change
+
+### docs
+
+* optimize CLAUDE.md for improved readability and MCP integration ([#211](https://github.com/cloudboyd/terraform-aws-backup/issues/211)) ([49434ed](https://github.com/cloudboyd/terraform-aws-backup/commit/49434ed8a1907442bcae8c1b076f98a39f792158))
+
+
+### Features
+
+* add archive tier and timezone support to backup plans ([#308](https://github.com/cloudboyd/terraform-aws-backup/issues/308)) ([e2ee8d4](https://github.com/cloudboyd/terraform-aws-backup/commit/e2ee8d443d99f5d063037b4cc74bc00ba6bd4d40))
+* Add automated AWS Backup feature discovery ([#222](https://github.com/cloudboyd/terraform-aws-backup/issues/222)) ([bc17645](https://github.com/cloudboyd/terraform-aws-backup/commit/bc17645ccb26b76253b5ff3121b33470c6b52f28))
+* add automatic v-prefix removal from release titles ([#183](https://github.com/cloudboyd/terraform-aws-backup/issues/183)) ([8e6e93e](https://github.com/cloudboyd/terraform-aws-backup/commit/8e6e93e755201b76e9382f21fb1437fe073367bc))
+* add AWS Backup region settings support ([#310](https://github.com/cloudboyd/terraform-aws-backup/issues/310)) ([30eabb1](https://github.com/cloudboyd/terraform-aws-backup/commit/30eabb102cb4e307548ce05bb2233bad3809a78f))
+* Add AWS Backup restore testing support ([#238](https://github.com/cloudboyd/terraform-aws-backup/issues/238), [#239](https://github.com/cloudboyd/terraform-aws-backup/issues/239)) ([#266](https://github.com/cloudboyd/terraform-aws-backup/issues/266)) ([3ac824b](https://github.com/cloudboyd/terraform-aws-backup/commit/3ac824b89b5ffa2ede4b32de60adabfdf8b616f2))
+* add aws_backup_selection data source support and documentation ([#311](https://github.com/cloudboyd/terraform-aws-backup/issues/311)) ([d768d50](https://github.com/cloudboyd/terraform-aws-backup/commit/d768d5082f508a78520f01b9eb0934cec118d8ae))
+* add backup report feature ([3881e72](https://github.com/cloudboyd/terraform-aws-backup/commit/3881e728e2cd210a6ef0bbde3afd55349f030aa5))
+* add backup report feature ([5ad9085](https://github.com/cloudboyd/terraform-aws-backup/commit/5ad9085e220514698d49437a27abea199b45e396))
+* add claude code review workflow ([#179](https://github.com/cloudboyd/terraform-aws-backup/issues/179)) ([a3b25eb](https://github.com/cloudboyd/terraform-aws-backup/commit/a3b25eb204d119286f0ed2c112bbf3acc723f5ae))
+* add Claude dispatch workflow for repository events ([#198](https://github.com/cloudboyd/terraform-aws-backup/issues/198)) ([660d70d](https://github.com/cloudboyd/terraform-aws-backup/commit/660d70dbb5473ebad1bcb262212d1262f0db74eb))
+* add MCP server support for enhanced documentation access ([#201](https://github.com/cloudboyd/terraform-aws-backup/issues/201)) ([911e845](https://github.com/cloudboyd/terraform-aws-backup/commit/911e8456d7da7d59d3a97559f62b05a940743262))
+* Add missing README file ([5912a19](https://github.com/cloudboyd/terraform-aws-backup/commit/5912a19562d2e38ed1fcaf90afd5bc3d89385a39))
+* Add missing README file ([01ad376](https://github.com/cloudboyd/terraform-aws-backup/commit/01ad37653e27e536b1d0ba534256fee13c5f4794))
+* add pre-commit workflow for automated code quality ([#203](https://github.com/cloudboyd/terraform-aws-backup/issues/203)) ([102c1c6](https://github.com/cloudboyd/terraform-aws-backup/commit/102c1c6ba6130cf6b70d887deab975c06d891434))
+* add release-please configuration ([#181](https://github.com/cloudboyd/terraform-aws-backup/issues/181)) ([d9492f8](https://github.com/cloudboyd/terraform-aws-backup/commit/d9492f8c1a34322f46ed61fb13896d8dc41fc5de))
+* Add retry logic for transient AWS API failures in tests ([#141](https://github.com/cloudboyd/terraform-aws-backup/issues/141)) ([4aff8eb](https://github.com/cloudboyd/terraform-aws-backup/commit/4aff8eb34ba46fdde96a70df03ce825b91537b95)), closes [#132](https://github.com/cloudboyd/terraform-aws-backup/issues/132)
+* add support for aws_backup_global_settings ([#277](https://github.com/cloudboyd/terraform-aws-backup/issues/277)) ([44e99e3](https://github.com/cloudboyd/terraform-aws-backup/commit/44e99e3fd1800ab8ca6b147c36323b81c59e6e2c))
+* Add support for aws_backup_logically_air_gapped_vault ([#260](https://github.com/cloudboyd/terraform-aws-backup/issues/260)) ([3225464](https://github.com/cloudboyd/terraform-aws-backup/commit/32254645c63b49d270cf90d9010668cb5e575aaa))
+* add support for backup vault access policies ([#319](https://github.com/cloudboyd/terraform-aws-backup/issues/319)) ([d9ee6b3](https://github.com/cloudboyd/terraform-aws-backup/commit/d9ee6b3fc63f18923c4b59e85910bd32b2161ffa))
+* add vault_name_validation_bypass variable to relax validation ([#297](https://github.com/cloudboyd/terraform-aws-backup/issues/297)) ([f4d3ae8](https://github.com/cloudboyd/terraform-aws-backup/commit/f4d3ae859bae20fbd6cc5a16164ac0aa186ac026))
+* Allow S3 backup ([7fdfcb8](https://github.com/cloudboyd/terraform-aws-backup/commit/7fdfcb8c9dfc378ff09de388c3796d9b9f74778d))
+* Allow S3 backup ([82558bf](https://github.com/cloudboyd/terraform-aws-backup/commit/82558bfffbf3acb43c2c8a5dce45d742fe6be4f6))
+* Allow S3 backup ([67810b4](https://github.com/cloudboyd/terraform-aws-backup/commit/67810b431c7f7d6fcebd5ae0536b56888ecd5c58))
+* Complete comprehensive documentation and enhanced input validation ([#119](https://github.com/cloudboyd/terraform-aws-backup/issues/119) [#120](https://github.com/cloudboyd/terraform-aws-backup/issues/120)) ([#153](https://github.com/cloudboyd/terraform-aws-backup/issues/153)) ([8d7d735](https://github.com/cloudboyd/terraform-aws-backup/commit/8d7d7358809cf9ba9369276f159a6978c4abad7a))
+* Comprehensive Code Quality & Structure Improvements (Issues [#121](https://github.com/cloudboyd/terraform-aws-backup/issues/121) & [#125](https://github.com/cloudboyd/terraform-aws-backup/issues/125)) ([#155](https://github.com/cloudboyd/terraform-aws-backup/issues/155)) ([22cc323](https://github.com/cloudboyd/terraform-aws-backup/commit/22cc323a04c6c06a2149bea29944540a38ab8724))
+* Comprehensive security enhancements and testing improvements ([#148](https://github.com/cloudboyd/terraform-aws-backup/issues/148)) ([3da8bd4](https://github.com/cloudboyd/terraform-aws-backup/commit/3da8bd4aedaf7c4d16bf4455c61394ae76597c33))
+* Enhance AWS Backup Audit Framework and module examples ([90529ad](https://github.com/cloudboyd/terraform-aws-backup/commit/90529adcd079ce568619706db4a8753a7a229f13))
+* enhance AWS Backup feature discovery with issue creation ([#234](https://github.com/cloudboyd/terraform-aws-backup/issues/234)) ([f19c275](https://github.com/cloudboyd/terraform-aws-backup/commit/f19c27593f381628736125d9d40aa3c6dd2d97e1))
+* enhance feature discovery workflow with security and automation improvements ([#312](https://github.com/cloudboyd/terraform-aws-backup/issues/312)) ([8b2fbc5](https://github.com/cloudboyd/terraform-aws-backup/commit/8b2fbc5c5a11f4c2fd199d68eef175b904f5b78b))
+* Enhance module with comprehensive AWS Backup features ([834b88a](https://github.com/cloudboyd/terraform-aws-backup/commit/834b88a277b923162f8befad9c5bb64116b339b9))
+* Implement comprehensive testing and CI/CD pipeline ([#131](https://github.com/cloudboyd/terraform-aws-backup/issues/131)) ([4047912](https://github.com/cloudboyd/terraform-aws-backup/commit/40479124432ea4506e1add512c3284b0a12492b4))
+* Implement performance optimizations and comprehensive examples (Issues [#122](https://github.com/cloudboyd/terraform-aws-backup/issues/122) & [#123](https://github.com/cloudboyd/terraform-aws-backup/issues/123)) ([#158](https://github.com/cloudboyd/terraform-aws-backup/issues/158)) ([18a163f](https://github.com/cloudboyd/terraform-aws-backup/commit/18a163fde2162db1b53fabfb873bf24c492a9a08))
+* implement smart PR creation for feature tracker updates ([#256](https://github.com/cloudboyd/terraform-aws-backup/issues/256)) ([10d2586](https://github.com/cloudboyd/terraform-aws-backup/commit/10d258623576c8a19f27ed84ba78dcbc8cb75507))
+* migrate from Dependabot to Renovate for better Terraform support ([#185](https://github.com/cloudboyd/terraform-aws-backup/issues/185)) ([e9ed95b](https://github.com/cloudboyd/terraform-aws-backup/commit/e9ed95b41c00e9d6040f1ada441e3d96f0a649f9))
+* only create aws_backup_plan if rules are provided ([e16aa7a](https://github.com/cloudboyd/terraform-aws-backup/commit/e16aa7a610e117a2eea5d6ff324c383612d09f0e))
+* only create aws_backup_plan if rules provided ([8af9165](https://github.com/cloudboyd/terraform-aws-backup/commit/8af9165270d2fe6af46cc3d73dbacdaa8a66ca1e))
+* replicate security-hardened Claude Code Review workflow with PR focus ([#193](https://github.com/cloudboyd/terraform-aws-backup/issues/193)) ([ef4bb10](https://github.com/cloudboyd/terraform-aws-backup/commit/ef4bb102cb1aca6082e4a8d4901aeddf8f3e4614))
+* replicate security-hardened Claude Code Review workflow with PR focus ([#196](https://github.com/cloudboyd/terraform-aws-backup/issues/196)) ([82c5878](https://github.com/cloudboyd/terraform-aws-backup/commit/82c587889995c16a13ff9dfc911dec4578ab771e))
+* support audit framework control scope ([#360](https://github.com/cloudboyd/terraform-aws-backup/issues/360)) ([4dff4d3](https://github.com/cloudboyd/terraform-aws-backup/commit/4dff4d305553072a566212f6273f419de350d38e))
+* support KMS encryption for logically air-gapped vaults ([#340](https://github.com/cloudboyd/terraform-aws-backup/issues/340)) ([970aa6b](https://github.com/cloudboyd/terraform-aws-backup/commit/970aa6baa3dc3416bde6d54124a1f937aa8377de))
+* support LAG backup targets and malware scanning ([#343](https://github.com/cloudboyd/terraform-aws-backup/issues/343)) ([f01c821](https://github.com/cloudboyd/terraform-aws-backup/commit/f01c82158ad16072bc7e4627afa13c261fc0e87e))
+
+
+### Bug Fixes
+
+* 48 ([3825ecd](https://github.com/cloudboyd/terraform-aws-backup/commit/3825ecde20272caf62eb1faee89d0ccc8ace2b0f))
+* add id-token write permission for OIDC authentication ([#225](https://github.com/cloudboyd/terraform-aws-backup/issues/225)) ([25c445a](https://github.com/cloudboyd/terraform-aws-backup/commit/25c445a5cae69783241a88cb3a0a09ec61e97272)), closes [#224](https://github.com/cloudboyd/terraform-aws-backup/issues/224)
+* Add missing cold_storage_after validations for plans and rules variables ([#164](https://github.com/cloudboyd/terraform-aws-backup/issues/164)) ([7b99f8b](https://github.com/cloudboyd/terraform-aws-backup/commit/7b99f8b1842a842b424de910d0c18ab4ba60c694))
+* Add proper GitHub token environment to pre-verification and issue creation steps ([#241](https://github.com/cloudboyd/terraform-aws-backup/issues/241)) ([e3afa37](https://github.com/cloudboyd/terraform-aws-backup/commit/e3afa372c4563522330b2fee22b8ffb29eb9d779))
+* add pull-requests write permission for automated PR creation ([#252](https://github.com/cloudboyd/terraform-aws-backup/issues/252)) ([3764756](https://github.com/cloudboyd/terraform-aws-backup/commit/3764756898db17b61793c5f57d58e2480f5210b8))
+* Add release automation configuration and fix variable default ([f9345af](https://github.com/cloudboyd/terraform-aws-backup/commit/f9345afbe20baee1b9c699c2e148481a6221d10e))
+* complete workflow fixes for Claude Code action on master ([#227](https://github.com/cloudboyd/terraform-aws-backup/issues/227)) ([619bacc](https://github.com/cloudboyd/terraform-aws-backup/commit/619bacccdd09806f914d0b17b2fc5ce0a7117a76)), closes [#224](https://github.com/cloudboyd/terraform-aws-backup/issues/224)
+* Correct output references in cost_optimized_backup example ([#166](https://github.com/cloudboyd/terraform-aws-backup/issues/166)) ([28e24cb](https://github.com/cloudboyd/terraform-aws-backup/commit/28e24cb81fe6fa3f5e99a9ae19f0d566689400f8))
+* Correct terraform formatting in iam.tf ([0342cd5](https://github.com/cloudboyd/terraform-aws-backup/commit/0342cd5a9caa1cf6415be27bde70dd280d2a94a5))
+* Deploy enhanced GitHub issue creation workflow to master ([#240](https://github.com/cloudboyd/terraform-aws-backup/issues/240)) ([b4b35c1](https://github.com/cloudboyd/terraform-aws-backup/commit/b4b35c13521f5894dc68ceb6c07e422356bb80be))
+* Enhance Windows VSS backup validation and add example configuration ([f2afcfd](https://github.com/cloudboyd/terraform-aws-backup/commit/f2afcfd559da235b1c726ae0394f6f4398e9abdb))
+* Enhance Windows VSS backup validation and add example configuration ([5ff6228](https://github.com/cloudboyd/terraform-aws-backup/commit/5ff6228addc28b2b9227cd9dbdb6c6ad806ef969))
+* handle empty inputs in feature-discovery workflow for schedule triggers ([#324](https://github.com/cloudboyd/terraform-aws-backup/issues/324)) ([4018a84](https://github.com/cloudboyd/terraform-aws-backup/commit/4018a84b030502d8b45a6faffc662f73c6cbe210))
+* Handle null values in dynamic for_each blocks in selection.tf ([#175](https://github.com/cloudboyd/terraform-aws-backup/issues/175)) ([54484af](https://github.com/cloudboyd/terraform-aws-backup/commit/54484afd3078c29ac4558512f1bf339f1441ef5a))
+* Improve validation and configuration for AWS Backup vault ([81d9bd2](https://github.com/cloudboyd/terraform-aws-backup/commit/81d9bd20fe963531d0492e47651cc926cfd25daa))
+* Improve validation and configuration for AWS Backup vault ([28ac0fa](https://github.com/cloudboyd/terraform-aws-backup/commit/28ac0faf5c873a4648b8f98927a905acd128007a))
+* make secure backup configuration example validate ([#338](https://github.com/cloudboyd/terraform-aws-backup/issues/338)) ([863bffd](https://github.com/cloudboyd/terraform-aws-backup/commit/863bffda54812f59471606acf519f19c24b7866c))
+* min retention days and max retention days required ([6826296](https://github.com/cloudboyd/terraform-aws-backup/commit/6826296bb394c307db5385bc11ca59837faad22d))
+* prevent command injection in claude-code-review workflow ([#327](https://github.com/cloudboyd/terraform-aws-backup/issues/327)) ([bad9f85](https://github.com/cloudboyd/terraform-aws-backup/commit/bad9f85bb01e99984515674895bb2da5eaab93aa)), closes [#325](https://github.com/cloudboyd/terraform-aws-backup/issues/325)
+* remove malformed test_formatting.tf causing CI failures ([#213](https://github.com/cloudboyd/terraform-aws-backup/issues/213)) ([fb2337b](https://github.com/cloudboyd/terraform-aws-backup/commit/fb2337b067c8e583a413594297e846b7bbcb6cc7))
+* Remove terraform plan step from example validation workflow ([cabe805](https://github.com/cloudboyd/terraform-aws-backup/commit/cabe805fc03b9db39f51258a2f4ba376ed0f02a4))
+* Remove Update local AWS provider configuration ([67553f8](https://github.com/cloudboyd/terraform-aws-backup/commit/67553f84c8639addd4d38b88519d146232f34c68))
+* replace deprecated aws_region attributes with region ([04dbabd](https://github.com/cloudboyd/terraform-aws-backup/commit/04dbabdd29521cc23c6c251120f2a779e2eb08f3))
+* replace non-existent labels with valid repository labels ([#243](https://github.com/cloudboyd/terraform-aws-backup/issues/243)) ([1afb0da](https://github.com/cloudboyd/terraform-aws-backup/commit/1afb0daa73fff5529bc739bc1b2ec86d4282d7ce))
+* Replace non-existent npm package check with Docker image validation ([#242](https://github.com/cloudboyd/terraform-aws-backup/issues/242)) ([5eecdd0](https://github.com/cloudboyd/terraform-aws-backup/commit/5eecdd04b8d8349c660079ca4b4d663ea2cdee82))
+* replace TERRAFORM_AUTOMATION_TOKEN with CLAUDE_ISSUE_TOKEN ([#229](https://github.com/cloudboyd/terraform-aws-backup/issues/229)) ([74508e9](https://github.com/cloudboyd/terraform-aws-backup/commit/74508e9a72c9e439c80b5d1be3d0d0a1dbf75ea2))
+* Resolve conditions variable type error in backup selections ([#170](https://github.com/cloudboyd/terraform-aws-backup/issues/170)) ([d83a5cf](https://github.com/cloudboyd/terraform-aws-backup/commit/d83a5cf9ed34c52e972fb49d45c6308b5fb3c580))
+* Resolve duplicate required_providers conflict in CI workflow ([8c5f493](https://github.com/cloudboyd/terraform-aws-backup/commit/8c5f4933cba55468c41fd2d73613d4b98344167c))
+* resolve git permissions for feature discovery workflow ([#233](https://github.com/cloudboyd/terraform-aws-backup/issues/233)) ([1211fea](https://github.com/cloudboyd/terraform-aws-backup/commit/1211fea0a0a1bb290fad52209399316ebd7df6b0))
+* Resolve IAM for_each invalid argument error ([#168](https://github.com/cloudboyd/terraform-aws-backup/issues/168)) ([49a5434](https://github.com/cloudboyd/terraform-aws-backup/commit/49a543404a73e81ecb9a655116aa9e38c304c139))
+* resolve pre-commit formatting issues ([#333](https://github.com/cloudboyd/terraform-aws-backup/issues/333)) ([b2401c7](https://github.com/cloudboyd/terraform-aws-backup/commit/b2401c751c176532b27c2f23cd753fc60f15aacd))
+* resolve remaining terraform validation and pre-commit CI failures ([#217](https://github.com/cloudboyd/terraform-aws-backup/issues/217)) ([bf4e432](https://github.com/cloudboyd/terraform-aws-backup/commit/bf4e4322239bb334c25712e6880283e858477e4d))
+* resolve terraform validation errors found by pre-commit workflow ([#205](https://github.com/cloudboyd/terraform-aws-backup/issues/205)) ([efcf067](https://github.com/cloudboyd/terraform-aws-backup/commit/efcf067a8795875033a496d69452434bef443dfa))
+* resolve Terraform variable validation cross-reference error ([#304](https://github.com/cloudboyd/terraform-aws-backup/issues/304)) ([474fa11](https://github.com/cloudboyd/terraform-aws-backup/commit/474fa11d162000afa6d7b0f88727c6904dbd2fb7))
+* retention days validations ([4a21a68](https://github.com/cloudboyd/terraform-aws-backup/commit/4a21a681f2eeae92f1318b59f0739c2ae61fdf36))
+* retention_days validation logic for backward compatibility ([#283](https://github.com/cloudboyd/terraform-aws-backup/issues/283)) ([1ef4913](https://github.com/cloudboyd/terraform-aws-backup/commit/1ef49133c12f45ba4a6c85603c35d7b27b2e72e8))
+* simplify recovery point tags assignment ([c64d98f](https://github.com/cloudboyd/terraform-aws-backup/commit/c64d98fcc8813814521acc0225a899ccd5852810))
+* simplify recovery point tags assignment in AWS Backup plan (thanks @Edward-Ireson) ([94f4581](https://github.com/cloudboyd/terraform-aws-backup/commit/94f458103d504f9f67c89ae35f920da9e1b16a87))
+* standardize AWS provider configurations across examples ([c23586f](https://github.com/cloudboyd/terraform-aws-backup/commit/c23586fe2ad4aaafc6e22b5d612edbf1c6c54da9))
+* update ARN validation to support wildcards and gov cloud partitions ([#262](https://github.com/cloudboyd/terraform-aws-backup/issues/262)) ([c70b5ce](https://github.com/cloudboyd/terraform-aws-backup/commit/c70b5ceb30a0045e762f380558b5f214cd586c6d))
+* Update Go dependencies to address security vulnerabilities ([0d27923](https://github.com/cloudboyd/terraform-aws-backup/commit/0d27923ad603ca1aef372e1fbd1874e4175b91b0))
+* Update Go dependencies to address security vulnerabilities ([#145](https://github.com/cloudboyd/terraform-aws-backup/issues/145)) ([cae39f8](https://github.com/cloudboyd/terraform-aws-backup/commit/cae39f84682a26d8bef078814bbba36686bd8964))
+* update Go version from 1.25 to 1.23 and configure Renovate to prevent pre-release versions ([#220](https://github.com/cloudboyd/terraform-aws-backup/issues/220)) ([3e62fb5](https://github.com/cloudboyd/terraform-aws-backup/commit/3e62fb57d138eac24d6953f5faad11b18b401d4a))
+* Update minimum AWS provider version to 5.0.0 for feature compatibility ([e0275e1](https://github.com/cloudboyd/terraform-aws-backup/commit/e0275e1fca98349fad21197c3d8754582abd095f))
+* Update precondition logic for vault locking in main.tf ([38c50a5](https://github.com/cloudboyd/terraform-aws-backup/commit/38c50a57823a38820a6b74b7d4f0ed554e27dad7))
+* Update README icon ([614d728](https://github.com/cloudboyd/terraform-aws-backup/commit/614d728cee21022309c17537615541e5dfce1aab))
+* Update README icon ([1ccacb3](https://github.com/cloudboyd/terraform-aws-backup/commit/1ccacb390d62d5a30a9d83f3075deb4f34da0927))
+* Update Terraform MCP server tool permissions ([#232](https://github.com/cloudboyd/terraform-aws-backup/issues/232)) ([f86ae31](https://github.com/cloudboyd/terraform-aws-backup/commit/f86ae319c8fe6ec9c6db03f0524272b8c0961da7)), closes [#224](https://github.com/cloudboyd/terraform-aws-backup/issues/224)
+* Use official HashiCorp Terraform MCP server ([#231](https://github.com/cloudboyd/terraform-aws-backup/issues/231)) ([8c9ff3b](https://github.com/cloudboyd/terraform-aws-backup/commit/8c9ff3bfd9c3fc286f0bc5a00f74e6c4f2298e97)), closes [#224](https://github.com/cloudboyd/terraform-aws-backup/issues/224)
+* use pull requests for feature tracker updates instead of direct push ([#246](https://github.com/cloudboyd/terraform-aws-backup/issues/246)) ([1239c76](https://github.com/cloudboyd/terraform-aws-backup/commit/1239c765bd7f951226da0f5f445c5f6e5d38fff9))
+* **version:** fix aws provider constrain ([abec6da](https://github.com/cloudboyd/terraform-aws-backup/commit/abec6da861cabb75d6415a5578679c99c7d730c6))
+* **version:** fix aws provider constrain ([7d45d62](https://github.com/cloudboyd/terraform-aws-backup/commit/7d45d62d1e82c6a0187d2c313949309be9dc1b8d))
+* Windows VSS backup validation to support all selection methods and case-insensitive EC2 detection ([#129](https://github.com/cloudboyd/terraform-aws-backup/issues/129)) ([bb682c3](https://github.com/cloudboyd/terraform-aws-backup/commit/bb682c3583931009a0dab5fc94d089b4ece2e21a))
+
+
+### Code Refactoring
+
+* Enhance vault lock configuration validation ([86ff7b0](https://github.com/cloudboyd/terraform-aws-backup/commit/86ff7b03bef371b81170d9af042dc8c365891529))
+* Update lifecycle precondition logic for AWS Backup vault ([f657214](https://github.com/cloudboyd/terraform-aws-backup/commit/f65721483f01fbfbdc6679d43fd86036b0381239))
+
 ## [1.10.0](https://github.com/lgallard/terraform-aws-backup/compare/1.9.0...1.10.0) (2026-07-04)
 
 
